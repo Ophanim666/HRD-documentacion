@@ -1,0 +1,10 @@
+-- Poblar la tabla TIPO_PARAMETRO
+INSERT INTO TIPO_PARAMETRO (id, tipo_parametro, estado, usuario_creacion, fecha_creacion)
+VALUES (1, 'Rol', 1, NULL, SYSDATETIME());
+
+-- Poblar la tabla PARAMETRO
+INSERT INTO PARAMETRO (id, parametro, valor, id_tipo_parametro, estado, usuario_creacion, fecha_creacion)
+VALUES 
+(1, 'Jefe de terreno', 'String', 1, 1, NULL, SYSDATETIME()),
+(2, 'Administrador de obra', 'String', 1, 1, NULL, SYSDATETIME()),
+(3, 'Pintor', 'String', 1, 1, NULL, SYSDATETIME());
